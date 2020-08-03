@@ -47,3 +47,29 @@ En dash -- here
 [http://jira.atlassian.com]
 xxx
 [Atlassian|http://atlassian.com]
+
+* a
+* bulleted
+*# with
+*# nested
+*# numbered
+* list
+
+# a
+# numbered
+#* with
+#* nested
+#* bullet
+# list
+
+- different
+- bullet
+- types
+
+{code}
+    xxx
+{code}
+
+{code:xml}
+    xxx
+{code}

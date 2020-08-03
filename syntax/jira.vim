@@ -11,6 +11,8 @@ set cpo&vim
 
 syn region jiraHeading matchgroup=jiraHeadingMarker start='^h[1-6]\.' end='$' oneline
 
+syn match jiraListMarker '^[#*-]*\s'
+
 syn region jiraStrong start='\*\<' end='\>\*' oneline
 syn region jiraEmph start='\<_' end='_\>' oneline
 syn region jiraCitation start='??\<' end='\>??' oneline
@@ -24,6 +26,7 @@ syn region jiraBlockQuote start='^bq.' end='\n\s*\n'
 
 syn region jiraBlockQuote2 start='{quote}' end='{quote}'
 syn region jiraColor start='{color:[^}]\+}' end='{color}'
+syn region jiraCode start='{code\(:[^}]*\)\?}' end='{code}'
 
 syn region jiraAnchorLink start='\[#' end=']' containedin=jiraLinkOuter oneline
 syn region jiraUserLink start='\[\~' end=']' containedin=jiraLinkOuter oneline
@@ -42,8 +45,6 @@ syn match jiraHrule '^\s*----\s*$'
 syn match jiraEmDash '\(^\|\s\)\zs---\ze\($\|\s\)'
 syn match jiraEnDash '\(^\|\s\)\zs--\ze\($\|\s\)'
 
-syn match jiraListMarker '^[#*]*' contained
-
 hi link jiraEmDash Keyword
 hi link jiraEnDash Keyword
 hi link jiraHrule Keyword
@@ -60,11 +61,15 @@ hi link jiraCitation Underlined
 hi link jiraSup Type
 hi link jiraSub StorageClass
 hi link jiraMono Define
+hi link jiraCode Define
 
 hi link jiraLink Underlined
 hi link jiraLinkOuter Underlined
 
 hi link jiraListMarker Operator
+
+hi link jiraBlockQuote Comment
+hi link jiraBlockQuote2 Comment
 
 let b:current_syntax = "jira"
 
