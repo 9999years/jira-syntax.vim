@@ -1,0 +1,49 @@
+{quote}
+    here is quotable
+  content to be quoted
+{quote}
+
+h1. Biggest heading $
+next line
+h2. Bigger heading
+h3. Big heading
+h4. Normal heading
+h5. Small heading
+h6. Smallest heading
+
+x *strong* x *strong*
+
+*strong* _emph_ intra_emph ??citation?? -deleted- \\
++inserted+ ^superscript^ ~subscript~ {{monospace}}
+
+*this is strong*?
+*this is strong*!
+"*this is strong*"
+
+_emph_
+"_emph_"
+"_intra_word_?"
+
+??citation??
+??citation???
+??citation??"
+
+bq. this entire paragraph is block-quoted...
+
+{color:red}
+    look ma, red text!
+{color}
+
+
+Horizontal rule:
+
+----
+
+Em dash --- here
+En dash -- here
+
+[#anchor]
+[^attachment.ext]
+[http://jira.atlassian.com]
+xxx
+[Atlassian|http://atlassian.com]
